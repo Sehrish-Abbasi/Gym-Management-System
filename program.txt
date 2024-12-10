@@ -1,0 +1,27 @@
+#include<iostream>
+#include<string>
+using namespace std;
+class Employee{
+    protected:
+    string name;
+    int id;
+    float basicSalary;
+    public:
+    Employee(string n, int i,float salary): name(n),id(i),
+    basicSalary(salary){}
+    void displayEmployeeDetails(){
+        cout<<"Enter employee name:"<<name<<endl;
+        cout<<"Enter employee id:"<<id<<endl;
+        cout<<"Enter basic salary:"<<basic salary<<endl;
+    }
+    float getBasicSalary(){
+        return basicSalary;
+        }
+    };
+    class Manager:public Employee{
+        private:
+        float bonus;
+        public:
+        Manager(string n,int i,float salary,float b):Employee
+    }
+}
